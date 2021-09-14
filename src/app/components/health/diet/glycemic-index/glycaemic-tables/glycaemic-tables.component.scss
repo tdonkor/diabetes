@@ -1,0 +1,195 @@
+grid-container {
+  box-sizing: border-box;
+
+
+
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+
+  display: grid;
+  border: 1px solid #fff;
+
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  //grid-template-areas:  "grid-head"
+  //                      "bread"
+  //                      "carbs"
+  //                      "fruit"
+  //                       "veg"
+  //                       "cereal"
+  //                       "desert"
+  //                       "sweets"
+
+
+  grid-template-areas:  "grid-head"
+                        "item"
+                        "item"
+                        "item"
+                        "item"
+                         "item"
+                         "item"
+                         "item"
+
+}
+
+//.head {
+//  width: 60%;
+//  background-color: aliceblue;
+//  margin: 20px 0 20px 20px;
+//  padding: 5px 0 10px 5px;
+//  box-shadow: 10px 10px 10px 10px #777777;
+//  font-weight: bold;
+//
+//}
+.grid-header {
+  grid-area: grid-head;
+  display:flex;
+  font-size: x-large;
+
+
+}
+
+
+.titles {
+  margin:10px 0 10px 30px;
+
+}
+
+.item {
+     grid-area: bread;
+      //padding: 5px;
+      margin: 5px;
+      border: #111111 solid 5px;
+      display:flex;
+
+}
+
+//.bread {
+//  grid-area: bread;
+//  display:flex;
+//}
+//.carbs {
+//  grid-area: carbs;
+//  display:flex;
+//
+//}
+//
+//.fruit {
+//  grid-area: fruit;
+//  display:flex;
+//}
+//.veg {
+//  grid-area: veg;
+//  display:flex;
+//}
+//.cereal {
+//  grid-area: veg;
+//  display:flex;
+//}
+//
+//.deserts {
+//  grid-area: fruit;
+//  display:flex;
+//}
+//
+//.sweets {
+//  grid-area: fruit;
+//  display:flex;
+//}
+
+p {
+  font-size: large;
+}
+// table area
+.table-size {
+  width: 30%;
+  margin: 20px auto;
+
+  //-moz-box-shadow: 10px 10px 10px 10px #777777;
+  //-webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+
+  th, td {
+    padding: 7px 10px 10px 10px;
+  }
+
+  th {
+    line-height: 20px;
+    text-align: left;
+    font-size: large;
+    font-weight: bolder;
+    background-color:  #2e5cb8;
+    color: azure;
+    //position: -webkit-sticky;
+    //position: sticky;
+   // top: 5px;
+   // z-index: 2;
+  }
+  td {
+    font-weight: bold;
+    font-size: large;
+
+    .id-choosen{
+      color: red;
+    }
+  }
+
+  tr {
+    line-height: 5px;
+  }
+  tr:nth-child(odd) {
+    background-color: lightsteelblue;
+  }
+
+  //tfoot tr {
+  //  background-color: #2e5cb8;
+  //}
+
+}
+// table area
+.head-size {
+  width: 30%;
+  margin: 20px auto;
+  //-moz-box-shadow: 10px 10px 10px 10px #777777;
+  //-webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+
+
+
+  th {
+    line-height: 20px;
+    text-align: left;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 7px 10px 10px 10px;
+    background-color:  #2e5cb8;
+    color: azure;
+
+    //position: sticky;
+    //top: 50px;
+   // z-index: 2;
+
+  }
+
+}
+.norm {
+  color:darkblue;
+}
+
+// used in the [ngClass]
+.medium {
+  color: green;
+}
+
+//used in color of items
+.high {
+  color :red;
+}
+
+
+.return{
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}

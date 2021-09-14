@@ -1,0 +1,79 @@
+<!--<p> Add a new appointment to the database</p>-->
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()"  #f="ngForm">
+    <div ngModelGroup="userData">
+      <div class="form-item">
+        <label for="Id">Appointments Id number</label>
+        <input
+          type="number"
+          id="Id"
+          [(ngModel)] = "appointments"
+          name="Id"
+          required
+          #id="ngModel">
+        <span class="help-block" *ngIf="!id.valid && id.touched">Please enter a valid Id number</span>
+      </div>
+      <div class="form-item">
+        <label for="Title">Appointment Title</label>
+        <input
+          type="string"
+          id="title"
+          ngModel
+          name="Title"
+          required
+          #Title="ngModel">
+        <span class="help-block" *ngIf="!Title.valid && Title.touched">Please enter a valid title</span>
+      </div>
+      <div class="form-item">
+        <label for="Location">Appointment Location</label>
+        <input
+          type="string"
+          id="location"
+          ngModel
+          name="Location"
+          required
+          #Location="ngModel">
+        <span class="help-block" *ngIf="!Location.valid && Location.touched">Please enter a valid location</span>
+      </div>
+      <div class="form-item">
+        <label for="Date">Date of appointment</label>
+        <input
+          type="date"
+          id="Date"
+          ngModel
+          name="Date"
+          required>
+      </div>
+      <div class="form-item">
+        <label for="Results">Results</label>
+        <input
+          type="string"
+          id="results"
+          ngModel
+          name="Results"
+          required
+          #Results="ngModel">
+        <span class="help-block" *ngIf="!Results.valid && Results.touched">Please enter some results</span>
+      </div>
+      <div class="form-item">
+        <label for="Notes">Notes</label>
+        <input
+          type="string"
+          id="Notes"
+          ngModel
+          name="Notes"
+          #Notes="ngModel">
+      </div>
+      <div>
+        <button
+          color="primary"
+          mat-raised-button
+          type="submit"
+          [disabled]="!f.valid">
+          Save</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+

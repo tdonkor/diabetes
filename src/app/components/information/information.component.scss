@@ -1,0 +1,282 @@
+
+// Main page
+
+header {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/burger.png");
+    /* linear gradient makes image darker but use transparency */
+    background-size: cover; /* gets the whole image */
+    background-position: center;
+    height: 100vh; /* 100% of the view port  for the image */
+    background-attachment: fixed; /* image stays in the same place */
+
+    button {
+      height: 60px;
+      width: 250px;
+      font-size: large;
+      text-decoration: none;
+      border-radius: 200px; /* make the button round  */
+      //transition: background-color 0.2s, border 0.2s, color 0.2s;
+      border: 3px solid white;
+      background-color: transparent;
+      color: white;
+
+    }
+
+    button:hover,
+    button:active {
+      background-color: #cf6d17;
+    }
+
+
+    /* main navigation on main page */
+
+    nav {
+      float:right;
+      list-style: none;
+      margin-top: 55px;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    nav li{
+      padding-right: 20px;
+      float:right;
+      display: inline-block; /* so they can be side by side */
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    nav li a:link,
+    nav li a:visited {
+      padding: 8px 0;
+      color:#fff;
+      text-decoration: none;  /*  specifies the decoration added to text */
+      text-transform: uppercase;
+      font-size: 90%;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+
+    }
+
+    nav li a:hover,
+    nav li a:active {
+      border-bottom: 2px solid #e67e22;
+    }
+
+    // holds text on the main page
+    .text-box {
+      position: absolute;
+      width: 1140px;
+      top: 50%;
+      left:50%;
+      color: white;
+      transform: translate(-50%, -50%);  /*  applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
+    }
+
+    .text-box p {
+      font-size: x-large;
+    }
+
+    .text-box h1 {
+      font-size: xxx-large;
+    }
+
+    a{
+      color: tomato;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+}
+
+
+section{
+  margin:0;
+}
+.section{
+  margin:0;
+}
+.section h1{
+  height: 50px;
+  background-color: #370093;
+  color:#fff;
+  padding:12px;
+  margin:0;
+}
+
+.section-diabetes-basics {
+  padding: 20px;
+  margin:0;
+  color: darkblue;
+  background-color: aliceblue;
+  //padding-left: 10px;
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/1.jpg");
+  ///* linear gradient makes image darker but use transparency */
+  //background-size: cover; /* gets the whole image */
+  //background-position: center;
+  //height: 100vh; /* 100% of the view port  for the image */
+  //background-attachment: fixed; /* image stays in the same place */
+  p {
+    font-size: large;
+  }
+
+  .types {
+    display: flex;
+    flex-direction: row;
+   // align-items:center; // centre vertically with height below
+    column-gap: 100px;
+    padding-left: 10%;
+
+    .type-column {
+      flex: 1;
+    }
+
+    .flexbox .type-column:nth-child(1) {
+      background: #ccc;
+      order: 1;
+    }
+    .flexbox .type-column:nth-child(2) {
+      background: #eee;
+      order: 0;
+    }
+    .flexbox .type-column:nth-child(3) {
+      background: #eee;
+      order: 2;
+    }
+  }
+  ul li {
+    color:darkblue;
+    font-size: large;
+    text-transform: none;
+    padding-left: 20px;
+    font-weight: bold;
+  }
+}
+
+.section-diabetes-levels {
+
+  padding: 10px;
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/6.jpg");
+  ///* linear gradient makes image darker but use transparency */
+  //background-size: cover; /* gets the whole image */
+  //background-position: center;
+  //height: 100vh; /* 100% of the view port  for the image */
+  //background-attachment: fixed; /* image stays in the same place */
+  color: darkblue;
+  background-color: aliceblue;
+
+  p {
+    color: darkblue;
+    font-size: x-large;
+  }
+
+  .hb-details{
+    font-size: x-large;
+    p {
+      font-size: x-large;
+    }
+  }
+  .levels {
+    display: flex;
+    flex-direction: row;
+    align-items:center; // centre vertically with height below
+    column-gap: 100px;
+    height: 75%;
+    padding-left: 10%;
+  }
+}
+
+.section-diabetes-links{
+  padding-left: 10px;
+  background-color: aliceblue;
+
+  p {
+     padding: 20px;
+     color:darkblue;
+     font-size: x-large;
+
+  }
+
+  ul li {
+    color:darkblue;
+    font-size: xx-large;
+    text-transform: lowercase;
+    padding-left: 20px;
+  }
+
+   li a:hover {
+    text-decoration: none;  /*  specifies the decoration added to text */
+    text-transform: uppercase;
+     color: #e67e22;
+     margin: 20px 0 20px 0;
+
+  }
+}
+
+.section-living-with-diabetes {
+
+  margin: 0;
+  color: darkblue;
+  background-color: aliceblue;
+
+  p {
+    color: darkblue;
+    font-size: large;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .types {
+    display: flex;
+    flex-direction: row;
+    // align-items:center; // centre vertically with height below
+    column-gap: 100px;
+    padding-left: 10%;
+
+    .type-column {
+      flex: 1;
+    }
+    ul li {
+      color:darkblue;
+      font-size: large;
+      text-transform: none;
+      padding-left: 20px;
+      font-weight: bold;
+    }
+    .flexbox .type-column:nth-child(1) {
+      background: #ccc;
+      order: 1;
+    }
+
+    .flexbox .type-column:nth-child(2) {
+      background: #eee;
+      order: 0;
+    }
+
+    .flexbox .type-column:nth-child(3) {
+      background: #eee;
+      order: 2;
+    }
+
+  }
+
+}
+h2, h3 {
+  color: darkred;
+}
+//
+//.basics-box {
+//  padding: 10px;
+//  transform: translate(-50%, -50%);  /*  applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
+//  border-style: hidden;
+//  color: white;
+//  box-shadow: 5px 5px 5px 5px #777777;
+//}
+//
+//.basics-box p {
+//  font-size: large;
+//}

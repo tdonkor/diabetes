@@ -1,0 +1,84 @@
+.main-area {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.title-area {
+  width: 90%;
+  background-color: lightsteelblue;
+  margin: 5px auto;
+  padding: 2px 0 2px 0;
+}
+.title-area .date-time {
+  position: relative;
+  left: 65%;
+}
+.title-area p {
+  padding-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  color: darkblue;
+}
+.title-area .two-types p {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: large;
+  color: black;
+}
+
+.table-size {
+  width: 90%;
+  margin: 10px auto;
+  -moz-box-shadow: 10px 10px 10px 10px #777777;
+  -webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+}
+.table-size th, .table-size td {
+  padding: 7px 10px 10px 10px;
+}
+.table-size th {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #2e5cb8;
+  color: azure;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 2;
+}
+.table-size td {
+  font-weight: bold;
+  font-size: x-large;
+}
+.table-size td .id-choosen {
+  color: red;
+}
+.table-size tr:nth-child(odd) {
+  background-color: lightsteelblue;
+}
+.table-size .sugar-average {
+  font-size: x-large;
+  background-color: #2e5cb8;
+  color: white;
+}
+.table-size tfoot tr {
+  background-color: #2e5cb8;
+}
+
+.hype {
+  color: white;
+}
+
+.id-color {
+  color: darkred;
+}
+
+.pagin {
+  font-weight: bold;
+  font-size: large;
+}
+
+/*# sourceMappingURL=diabetes-list.component.css.map */

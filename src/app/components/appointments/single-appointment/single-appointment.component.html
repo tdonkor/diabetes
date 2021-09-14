@@ -1,0 +1,31 @@
+
+<div class="main-area">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Results</th>
+      <th>Notes</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngIf="appointment">
+      <td>{{appointment.id}}</td>
+      <td>{{appointment.title}}</td>
+      <td>{{appointment.date | date:'fullDate'}}</td>
+      <td>{{appointment.location}}</td>
+      <td>{{appointment.results}}</td>
+      <td>{{appointment.notes}}</td>
+      <td><button class="edit" mat-raised-button (click)="editReadingDialog(appointment.id)">Edit</button></td>
+      <td><button class="del" mat-raised-button (click)="removeReadingDialog(appointment.id)">Delete</button></td>
+    </tr>
+    </thead>
+  </table>
+
+  <div class="return">
+    <a routerLink="/appointments" routerLinkActive="active">Back to Appointment List</a>
+  </div>
+</div>

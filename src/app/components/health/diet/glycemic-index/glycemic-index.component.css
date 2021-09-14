@@ -1,0 +1,18 @@
+.main-area {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+p {
+  font-size: large;
+}
+
+.return {
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=glycemic-index.component.css.map */

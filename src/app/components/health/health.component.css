@@ -1,0 +1,33 @@
+.main-page {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  margin: 0;
+  background-color: aliceblue;
+}
+.main-page .inner {
+  padding: 30px;
+  margin: 0;
+  border-style: hidden;
+  color: darkblue;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+.main-page .inner img {
+  margin: 20px;
+  height: 300px;
+  width: 350px;
+  border: solid 1px aliceblue;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+.main-page .inner p {
+  font-size: x-large;
+}
+.main-page .inner a {
+  font-size: x-large;
+  font-weight: bold;
+}
+.main-page .inner a:hover {
+  color: #e67e22;
+}
+
+/*# sourceMappingURL=health.component.css.map */

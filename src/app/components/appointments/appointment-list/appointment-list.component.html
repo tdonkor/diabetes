@@ -1,0 +1,42 @@
+<div class="main-area">
+
+  <div class ="title-area">
+    <p>Number of Diabetes Appointments: {{ numOfAppointments}}</p>
+    <div class="two-types">
+      <p> Click on the appointment <span class="id-color"><u>Id</u></span> to investigate the appointment deeper.</p>
+    </div>
+  </div>
+  <table class="table-size">
+    <thead>
+    <tr>
+      <!--calls the sort function on a click on the table header-->
+      <th>Id</th>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Date</th>
+      <th>Results</th>
+      <th>Notes</th>
+
+    </tr>
+    </thead>
+    <tr *ngFor="let item of appointmentList | paginate: config">
+      {{ calculateNumOfAppointments(appointmentList.length) }}
+      <td
+      ><a class="id-choosen" [routerLink] = "['/singleAppointment', item.id]">
+        {{ item.id}}
+      </a>
+      </td>
+      <td> {{item.title}}</td>
+      <td>{{item.date | date }}</td>
+      <td>{{item.location}}</td>
+      <td>{{item.results}}</td>
+      <td>{{item.notes}}</td>
+    </tr>
+    <tr *ngIf="!appointmentList || !appointmentList.length">
+      <td colspan="3">No Results found</td>
+    </tr>
+  </table>
+  <pagination-controls class="pagin" (pageChange)="pageChanged($event)"></pagination-controls>
+
+</div>
+

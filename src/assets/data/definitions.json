@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Blood Glucose Levels",
+    "description": "Your blood sugar levels, also known as blood glucose levels, are a measurement that show how much glucose you have in your blood."
+  },
+  {
+    "title": "Cholesterol",
+    "description": "Cholesterol is fat that is found in our blood. Sometimes it’s called lipids. When we hear this word, we think of it building up in our arteries and contributing to long-term health problems, but cholesterol isn’t just a bad guy.."
+  },
+  {
+    "title": "Carbohydrate",
+    "description": "Any of a large group of organic compounds occurring in foods and living tissues and including sugars, starch, and cellulose. They contain hydrogen and oxygen in the same ratio as water (2:1) and typically can be broken down to release energy in the animal body.."
+  },
+  {
+    "title": "Diabetes",
+    "description": "Where your blood glucose level is too high. It can happen when your body doesn’t produce enough insulin, or when you can’t produce any at all."
+  },
+  {
+    "title": "Fiber",
+    "description": "Fiber is a type of carbohydrate that the body can't digest. Though most carbohydrates are broken down into sugar molecules, fiber cannot be broken down into sugar molecules, and instead it passes through the body undigested. Fiber helps regulate the body's use of sugars, helping to keep hunger and blood sugar in check."
+  },
+  {
+    "title": "Gliclazide ",
+    "description": "Gliclazide is a medicine used to treat type 2 diabetes. Gliclazide lowers your blood sugar by increasing the amount of insulin your body produces."
+  },
+  {
+    "title": "Glucose",
+    "description": "Glucose is a sugar that you get from food and drink. Your blood sugar levels go up and down throughout the day and for people living with diabetes these changes are larger and happen more often than in people who don't have diabetes."
+  },
+  {
+    "title": "Glycaemic index",
+    "description": "The glycaemic index (GI) tells us whether a food raises blood glucose levels quickly, moderately or slowly."
+  },
+
+  {
+    "title": " HbA1c",
+    "description": "HbA1c is your average blood glucose (sugar) levels for the last two to three months. If you have diabetes, an ideal HbA1c level is 48mmol/mol (6.5%) or below."
+  },
+  {
+    "title": "HDL",
+    "description":"HDL stands for high-density lipoproteins. It is sometimes called the \"good\" cholesterol because it carries cholesterol from other parts of your body back to your liver. Your liver then removes the cholesterol from your body. LDL stands for low-density lipoproteins."
+  },
+  {
+  "title": "Hypoglycaemia",
+  "description":"Hypoglycaemia or hypo can happen when your blood glucose level (also called blood sugar) is too low, usually below 4mmol/l.."
+  },
+  {
+  "title": "Hyperglycaemia",
+  "description": "Hyperglycaemia, or a hyper, can happen when your blood glucose (sugar) levels are too high – usually above 7mmol/l before a meal and above 8.5mmol/l two hours after a meal. This happens because the body either cannot produce enough insulin to process the sugar in the blood or it cannot use the insulin effectively enough."
+  },
+  {
+    "title": "Hypertension ",
+    "description": "Hypertension is high blood pressure.it puts a strain on your blood vessels and can damage them. This can make it harder for blood to flow around the body and reach all the vital areas it needs to, like your heart. And you’re more at risk of having a heart attack or stroke. It also puts you more at risk of developing all types of diabetes complications, like serious problems with your feet, your eyes and your kidneys."
+  },
+  {
+    "title": "Insulin ",
+    "description": "Insulin is a hormone made in the pancreas, which is an organ in your body that helps with digestion. Insulin helps your body use glucose (sugar) for energy."
+  },
+  {
+    "title": "Jardiance",
+    "description": "Jardiance is a once-daily oral medication that is used to control blood glucose levels in people with type 2 diabetes. By removing excessive glucose from the body through urine, Jardiance helps to improve glycemic control among patients with type 2 diabetes. This can result in improved HbA1c levels, which can reduce the risk of diabetes-related complications."
+  },
+  {
+    "title": "LDL",
+    "description": "LDL stands for low-density lipoproteins. It is sometimes called the \"bad\" cholesterol because a high LDL level leads to a buildup of cholesterol in your arteries."
+  },
+  {
+    "title": "Metformin",
+    "description": "Metformin is a medicine used to treat type 2 diabetes, and to help prevent type 2 diabetes if you're at high risk of developing it. Metformin lowers your blood sugar levels by improving the way your body handles insulin."
+  },
+  {
+    "title": "mmol/l",
+    "description": "mmol/l stands for millimoles per litre. A mole is a scientific unit often used to measure chemicals."
+  },
+  {
+    "title": "Nephropathy ",
+    "description": "Diabetic nephropathy is the name given to kidney damage caused by diabetes. It develops slowly, over many years, and is also referred to as kidney disease. One of the main jobs of your kidneys is to filter your blood. They get rid of extra fluid and waste products from your body through your urine. High blood glucose (sugar) levels can damage the small blood vessels and tiny filters in your kidneys. High blood pressure can also do this too. This can cause them to leak and not work as well. When this happens, abnormal amounts of protein from the blood can leave your body in your urine. This is often an early sign of kidney disease."
+  },
+  {
+  "title": "Pancreas ",
+  "description": "The pancreas is an abdominal organ that is located behind the stomach and is surrounded by other organs, including the spleen, liver and small intestine. The pancreas is about 6 inches (15.24 centimeters) long, oblong and flat. The pancreas plays an important role in digestion and in regulating blood sugar."
+  },
+  {
+    "title": "Prediabetes",
+    "description": " Some people may have a blood sugar level that is higher than usual, but not high enough to be diagnosed with type 2 diabetes. This is called prediabetes, and means you’re at risk of developing type 2 diabetes."
+  },
+  {
+    "title": "Retinopathy  ",
+    "description": "Diabetic retinopathy is an eye disease that people living with diabetes are more at risk of developing. High sugar levels damage your blood vessels. When these blood vessels are damaged, they can get blocked, leak or grow randomly. This means the retina can’t get the blood it needs and so can’t work properly. This means you won’t be able to see properly."
+  },
+  {
+  "title": "Starch",
+  "description": "Starch is a carbohydrate commonly found in nature and one of the primary sources of food energy for human beings. It is regularly eaten in the form of wheat, rice, potatoes, and other staple foods cultivated throughout the world. Alongside fiber and sugar, starch is one of the three main categories of carbohydrates."
+  },
+  {
+    "title": "Statins",
+    "description": "Statins are a group of medicines that can help lower the level of low-density lipoprotein (LDL) cholesterol in the blood. LDL cholesterol is often referred to as \"bad cholesterol\", and statins reduce the production of it inside the liver"
+  },
+  {
+    "title": "Sugar",
+    "description": "Sugar is the generic name for sweet-tasting, soluble carbohydrates, many of which are used in food."
+  }
+]

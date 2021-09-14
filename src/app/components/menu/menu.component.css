@@ -1,0 +1,41 @@
+.menus {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.menuBtn {
+  height: 40px;
+  width: 280px;
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+button {
+  height: 40px;
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.menuBtn:hover,
+.menuBtn:active {
+  background-color: #cf6d17;
+}
+
+.mat-menu-item {
+  color: #2e5cb8;
+}
+
+.mat-menu-item:hover {
+  background-color: #cf6d17;
+  color: white;
+}
+
+/*# sourceMappingURL=menu.component.css.map */

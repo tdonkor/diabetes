@@ -1,0 +1,75 @@
+
+<div class="weight-area">
+  <p> Click on the BodyMass <strong><u>WAIST VALUE</u></strong> to investigate the Waist value deeper.</p>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Weight (stones)</th>
+      <th>Height (feet/inches)</th>
+      <th>Waist (inches)</th>
+      <th>Date</th>
+      <th>Time of Day</th>
+      <th>BMI</th>
+      <th>Notes</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngIf="weightValue">
+      <td>{{weightValue.id}}</td>
+      <td>{{weightValue.weight}}</td>
+      <td>{{weightValue.height}}</td>
+      <td
+      ><a class="id-chosen" [routerLink] = "['/waist', weightValue.waist]">
+        {{ weightValue.waist}}
+      </a>
+      <td>{{weightValue.date | date:'fullDate'}}</td>
+      <td>{{weightValue.timeOfDay}}</td>
+      <td>{{weightValue.bmi}}</td>
+      <td>{{weightValue.notes}}</td>
+      <td><button class="edit" mat-raised-button (click)="editReadingDialog(weightValue.id)">Edit</button></td>
+      <td> <button color="warn" mat-raised-button (click)="removeReadingDialog(weightValue.id)">Delete</button></td>
+    </tr>
+    </thead>
+  </table>
+  <div class="info">
+    <p *ngIf="weightValue.bmi > 30"
+       [ngClass] = "{obese : weightValue.bmi > 30 }">
+      <u>{{weightValue.bmi}}</u> :
+      Unfortunately. This is an <strong>Obese BMI</strong> reading above 30, this is <u>Dangerous</u>. You need to get this down as quickly as possible or talk to the doctor.
+    </p>
+    <p *ngIf="weightValue.bmi >=  26 && weightValue.bmi <30"
+       [ngClass] = "{overweight : weightValue.bmi >=  26 && weightValue.bmi < 30}">
+      <u>{{weightValue.bmi}}</u> :
+      Unfortunately. This is an <strong>Overweight BMI </strong> reading equal to or above 26 but less than 30. If you are close to 26, i.e below 27 this is <u>borderline </u> but you should try and get this down it is still too high and could cause health issues.
+    </p>
+    <p *ngIf="weightValue.bmi >=  18.5 && weightValue.bmi < 26"
+       [ngClass] = "{normal : weightValue.bmi >=  18.5 && weightValue.bmi < 26 }">
+      <u>{{weightValue.bmi}}</u> :
+      <span>WELL DONE.</span> This is a <strong>Normal BMI </strong> reading above 18.5 but less than 26 your goal is to maintain this level.
+    </p>
+    <p *ngIf="weightValue.bmi <  19"
+       [ngClass] = "{underweight : weightValue.bmi < 19 }">
+      <u>{{weightValue.bmi}}</u> :
+      Unfortunately. This is an <strong>Underweight BMI</strong> reading below 19, this is <u>Dangerous</u>. You need to talk to the doctor.
+    </p>
+
+    <h1>
+       BMI range values
+    </h1>
+    <ul>
+      <li>Below 19 – you're in the underweight range</li>
+      <li>Between 9 and 26 – you're in the healthy weight range</li>
+      <li>Between 26 and 30 – you're in the overweight range</li>
+      <li>Between 30 and 40 – you're in the obese range</li>
+    </ul>
+    <p> BMI takes into account natural variations in body shape, giving a healthy weight range for a particular height. As well as measuring your BMI, healthcare professionals may take other factors into account when assessing if you're a healthy weight.
+    Muscle is much denser than fat, so very muscular people, such as heavyweight boxers, weight trainers and athletes, may be a healthy weight even though their BMI is classed as obese.
+    <br>Your ethnic group can also affect your risk of some health conditions. For example, adults of South Asian origin may have a higher risk of some health problems, such as diabetes, with a BMI of 23, which is usually considered healthy.</p>
+  </div>
+
+  <div class="return">
+    <a routerLink="/weightList" routerLinkActive="active">Back to BodyMass List Readings</a>
+  </div>
+
+</div>

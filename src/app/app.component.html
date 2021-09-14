@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="grid-container">
+
+  <header>
+    <!--
+    Pass the header title changes the headerTitle to the new pages title
+     from the app-header component input for the component called.
+    -->
+    <app-header [headerTitle]="title"></app-header>
+
+  </header>
+  <main>
+<!--     the changing routes called by the different components -->
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+<!--    the footer component-->
+    <app-footer></app-footer>
+  </footer>
+
+</div>
+
+

@@ -1,0 +1,53 @@
+.background {
+  padding: 10px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+table {
+  width: 97%;
+  margin: 30px 30px 0 30px;
+
+}
+
+mat-paginator {
+  margin: 0 30px 0 30px;
+  width: 97%;
+
+}
+
+.mat-header-cell {
+  justify-content: left;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 8px 8px 8px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #2e5cb8;
+  text-shadow: 2px 2px 7px #111111;
+  color: white;
+
+}
+
+.mat-cell {
+  padding: 10px 8px 10px 20px;
+  font-size: large;
+  color: darkblue;
+}
+.mat-cell.cell-title {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+th {
+  font-weight: bolder;
+}
+
+
+.mat-cell:hover {
+ // background: #F8F8F8;
+  //background: aliceblue;
+  background-color: #cf6d17;
+  color: white;
+
+}

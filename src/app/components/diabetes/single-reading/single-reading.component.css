@@ -1,0 +1,84 @@
+.main-area {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  background-color: aliceblue;
+}
+.main-area .table, .main-area th, .main-area td {
+  border: 1px solid black;
+}
+.main-area .table {
+  width: 80%;
+  -moz-box-shadow: 10px 10px 10px 10px #777777;
+  -webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+  margin: 50px;
+}
+.main-area .table th, .main-area .table td {
+  padding: 7px 10px 10px 10px;
+}
+.main-area .table th {
+  text-align: left;
+  font-size: large;
+  font-weight: bolder;
+  background-color: #2e5cb8;
+  color: snow;
+}
+.main-area .table td {
+  font-weight: bold;
+  font-size: x-large;
+}
+.main-area .table button {
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: x-large;
+  background-color: red;
+}
+.main-area .info {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 50px;
+  font-size: large;
+  width: 80%;
+  box-shadow: 10px 10px 10px 10px #777777;
+  background-color: lightcyan;
+}
+.main-area .info li {
+  font-weight: bold;
+}
+.main-area .return {
+  margin: 50px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.hype {
+  color: white;
+}
+
+.hypo {
+  font-size: x-large;
+  font-weight: bold;
+  color: green;
+}
+
+.hyper {
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+}
+
+.serious {
+  font-size: x-large;
+  font-weight: bold;
+  color: darkred;
+}
+
+.normal {
+  font-size: x-large;
+  font-weight: bold;
+  color: blue;
+}
+
+/*# sourceMappingURL=single-reading.component.css.map */

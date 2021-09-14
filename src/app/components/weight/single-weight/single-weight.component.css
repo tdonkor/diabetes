@@ -1,0 +1,97 @@
+.weight-area {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  background-color: aliceblue;
+}
+.weight-area p {
+  margin-right: 50px;
+  font-size: large;
+  font-weight: bold;
+}
+.weight-area .table, .weight-area th, .weight-area td {
+  border: 1px solid black;
+}
+.weight-area .table {
+  width: 80%;
+  -moz-box-shadow: 10px 10px 10px 10px #777777;
+  -webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+  margin: 50px;
+}
+.weight-area .table th, .weight-area .table td {
+  padding: 7px 10px 10px 10px;
+}
+.weight-area .table th {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #2e5cb8;
+  color: snow;
+}
+.weight-area .table td {
+  font-weight: bold;
+  font-size: x-large;
+}
+.weight-area .table button {
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: x-large;
+}
+.weight-area .table button:hover {
+  background-color: #cf6d17;
+}
+.weight-area .table .edit {
+  background-color: blue;
+}
+.weight-area .table .del {
+  background-color: red;
+}
+.weight-area .info {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 50px;
+  font-size: large;
+  width: 80%;
+  box-shadow: 10px 10px 10px 10px #777777;
+  background-color: lightcyan;
+}
+.weight-area .info li {
+  font-weight: bold;
+}
+.weight-area .return {
+  margin: 50px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.weight-area .underweight {
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+}
+.weight-area .healthy {
+  font-size: x-large;
+  font-weight: bold;
+  color: darkgreen;
+}
+.weight-area .overweight {
+  font-size: x-large;
+  font-weight: bold;
+  color: blue;
+}
+.weight-area .obese {
+  font-size: x-large;
+  font-weight: bold;
+  color: darkred;
+}
+.weight-area p {
+  margin-left: 50px;
+  color: darkblue;
+  font-size: large;
+}
+.weight-area .id-chosen {
+  color: red;
+}
+
+/*# sourceMappingURL=single-weight.component.css.map */

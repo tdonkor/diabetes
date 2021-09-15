@@ -1,0 +1,398 @@
+<div class="grid-container">
+
+  <section class="grid-header">
+    <table class="head-size">
+      <thead>
+      <tr>
+        <th>Low Glycaemic Index (good)</th>
+      </tr>
+      </thead>
+    </table>
+    <table class="head-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Medium Glycaemic Index (Keep to a minimum)</th>
+      </tr>
+      </thead>
+    </table>
+    <table class="head-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">High Glycaemic Index (Bad)</th>
+      </tr>
+      </thead>
+    </table>
+
+  </section>
+
+  <h2 class="titles">Bread Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowBread">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumBread">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highBread">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <h2 class="titles">Carbohydrate Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowCarbs">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumCarbs">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highCarbs">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <h2 class="titles">Fruit Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowFruit">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumFruit">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highFruit">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <h2 class="titles">Vegetable Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowVeg">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumVeg">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highVeg">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+<!--  <section class="item">-->
+<!--    <table class="table-size">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>Id</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>GI Value</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tr *ngFor="let item of lowCarbs">-->
+<!--        <td>{{item.id}}</td>-->
+<!--        <td>{{item.name}}</td>-->
+<!--        <td>{{item.gi}}</td>-->
+<!--      </tr>-->
+<!--    </table>-->
+
+<!--    <table class="table-size">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>-->
+<!--        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>-->
+<!--        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tr *ngFor="let item of mediumCarbs">-->
+<!--        <td>{{item.id}}</td>-->
+<!--        <td>{{item.name}}</td>-->
+<!--        <td>{{item.gi}}</td>-->
+<!--      </tr>-->
+<!--    </table>-->
+<!--    <table class="table-size">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>-->
+<!--        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>-->
+<!--        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tr *ngFor="let item of highCarbs">-->
+<!--        <td>{{item.id}}</td>-->
+<!--        <td>{{item.name}}</td>-->
+<!--        <td>{{item.gi}}</td>-->
+<!--      </tr>-->
+<!--    </table>-->
+<!--  </section>-->
+  <h2 class="titles">Cereal Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowCereal">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumCereal">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highCereal">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <h2 class="titles">Deserts and Biscuits Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowDeserts">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumDeserts">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highDeserts">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <h2 class="titles">Sweets and Chocolates Glycaemic ranges</h2>
+  <section class="item">
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of lowSweets">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getMediumColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of mediumSweets">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Id</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">Name</th>
+        <th [ngStyle] = "{backgroundColor: getHighColor()}">GI Value</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let item of highSweets">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.gi}}</td>
+      </tr>
+    </table>
+  </section>
+  <div class="return">
+    <a routerLink="/glycemic" routerLinkActive="active">Back to Glycaemic main page</a>
+  </div>
+  </div>

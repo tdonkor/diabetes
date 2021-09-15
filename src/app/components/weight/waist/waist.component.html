@@ -1,0 +1,34 @@
+<div class="main-area">
+  <div class="info">
+    <p *ngIf=" waistValue  <= 37"
+       [ngClass] = "{healthy : waistValue  <= 37 }">
+       A waist measurement of <u>{{waistValue}}</u> is Healthy, keep  below this level to stay healthy.
+    </p>
+    <p *ngIf="waistValue > 37 && waistValue < 40"
+       [ngClass] = "{unhealthy: waistValue > 37 && waistValue < 40 }">
+      A waist measurement of <u>{{waistValue}}</u> is Unhealthy, you are at a high risk start trying to lose weight.
+    </p>
+    <p *ngIf="waistValue > 40"
+       [ngClass] = "{obese: waistValue >  40}">
+      A waist measurement of <u>{{waistValue}}</u> is very Unhealthy, you are at a<strong>very high risk</strong> see a doctor.
+    </p>
+    <h1>
+      Waist ranges (Men)
+    </h1>
+    <ul>
+      <li>A waist measurement below 94cm (37in) is ‘low risk’</li>
+      <li>A waist measurement between 94–102cm (37-40in) is ‘high risk’</li>
+      <li>A waist measurement more than 102cm (40in) is ‘very high’</li>
+
+    </ul>
+    <p> For men of African Caribbean, South Asian, Chinese and Japanese origin, a waist circumference below 90cm (35.4in) is low risk, and more than that is ‘very high risk’ (there isn’t a ‘high risk’ category).</p>
+    <h2>Why does your ethnic origin make a difference?</h2>
+    <p>African Caribbean, South Asian, Chinese and Japanese people tend to carry more fat and less muscle at the same weight as a white European. And the risk of diabetes and heart and circulatory diseases starts to increase at a lower weight gain than for Europeans.</p>
+  </div>
+
+  <div class="return">
+    <a routerLink="/weightList" routerLinkActive="active">Back to BodyMass List Readings</a>
+  </div>
+
+</div>
+

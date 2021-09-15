@@ -1,0 +1,97 @@
+grid-container {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  display: grid;
+  border: 1px solid #fff;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-areas: "grid-head" "item" "item" "item" "item" "item" "item" "item";
+}
+
+.grid-header {
+  grid-area: grid-head;
+  display: flex;
+  font-size: x-large;
+}
+
+.titles {
+  margin: 10px 0 10px 30px;
+}
+
+.item {
+  grid-area: bread;
+  margin: 5px;
+  border: #111111 solid 5px;
+  display: flex;
+}
+
+p {
+  font-size: large;
+}
+
+.table-size {
+  width: 30%;
+  margin: 20px auto;
+  box-shadow: 10px 10px 10px 10px #777777;
+}
+.table-size th, .table-size td {
+  padding: 7px 10px 10px 10px;
+}
+.table-size th {
+  line-height: 20px;
+  text-align: left;
+  font-size: large;
+  font-weight: bolder;
+  background-color: #2e5cb8;
+  color: azure;
+}
+.table-size td {
+  font-weight: bold;
+  font-size: large;
+}
+.table-size td .id-choosen {
+  color: red;
+}
+.table-size tr {
+  line-height: 5px;
+}
+.table-size tr:nth-child(odd) {
+  background-color: lightsteelblue;
+}
+
+.head-size {
+  width: 30%;
+  margin: 20px auto;
+  box-shadow: 10px 10px 10px 10px #777777;
+}
+.head-size th {
+  line-height: 20px;
+  text-align: left;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 7px 10px 10px 10px;
+  background-color: #2e5cb8;
+  color: azure;
+}
+
+.norm {
+  color: darkblue;
+}
+
+.medium {
+  color: green;
+}
+
+.high {
+  color: red;
+}
+
+.return {
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=glycaemic-tables.component.css.map */

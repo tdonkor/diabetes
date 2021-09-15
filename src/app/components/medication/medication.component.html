@@ -1,0 +1,110 @@
+
+<div class="background">
+  <div>
+    <h1>Medication Table</h1>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Medication Column -->
+      <ng-container matColumnDef="Medication">
+        <th mat-header-cell  *matHeaderCellDef> Medication </th>
+        <td mat-cell  class="cell-title" *matCellDef="let element"> {{element.medication}} </td>
+      </ng-container>
+
+      <!-- Dose Column -->
+      <ng-container matColumnDef="Dose">
+        <th mat-header-cell *matHeaderCellDef> Dose Per Tablet </th>
+        <td mat-cell class="cell-data" *matCellDef="let element"> {{element.dose}} </td>
+      </ng-container>
+
+
+      <!-- Medication Column -->
+      <ng-container matColumnDef="Intake">
+        <th mat-header-cell  *matHeaderCellDef>  Daily Intake </th>
+        <td mat-cell  class="cell-data" *matCellDef="let element"> {{element.intake}} </td>
+      </ng-container>
+
+      <!-- Dose Column -->
+      <ng-container matColumnDef="Notes">
+        <th mat-header-cell *matHeaderCellDef> Notes </th>
+        <td mat-cell class="cell-data" *matCellDef="let element"> {{element.notes}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row class="mat-head-row" *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <!--  <mat-paginator [length]="medication.length"-->
+    <!--                 [pageSize]="8"-->
+    <!--                 [pageSizeOptions]="[8, 10]" showFirstLastButtons></mat-paginator>-->
+
+  </div>
+  <h1>Medication Information</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+      <mat-card class="section-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Metformin</mat-card-title>
+          <mat-card-subtitle>Diabetes Medication</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="../../../assets/images/metformin.jpg" alt="Photo of a metformin package">
+          <p><strong>Metformin</strong> is a medicine used to treat type 2 diabetes, and to help prevent type 2 diabetes if you're at high risk of developing it.</p>
+          <p><strong>Metformin</strong> works by reducing the amount of sugar your liver releases into your blood. It also makes your body respond better to insulin. Insulin is the hormone that controls the level of sugar in your blood.</p>
+          <p> It's best to take <strong>metformin</strong> with a meal to reduce the side effects.</p>
+          <p>The most common side effects are feeling and being sick, diarrhoea, stomach ache and going off your food.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card class="section-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Jardiance</mat-card-title>
+            <mat-card-subtitle>Diabetes Medication</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <img mat-card-image src="../../../assets/images/Jardiance.jpg" alt="Photo of a Jardiance package">
+            <p><strong>Jardiance</strong> is a medicine used to treat /type 2 diabetes, </p>
+            <p><strong>Jardiance</strong> works by helping the kidneys remove glucose from the bloodstream through the urine</p>
+             <p> By removing excessive glucose from the body through urine, <strong>Jardiance</strong> helps to improve glycemic control among patients with type 2 diabetes. This can result in improved HbA1c levels, which can reduce the risk of diabetes-related complications.</p>
+            <p>The most common mild side effects are urinating more often than usual, dehydration, nausea and increased thirst.</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    <div class="grid-item">
+      <mat-card class="section-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Gliclazide</mat-card-title>
+          <mat-card-subtitle>Diabetes Medication</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="../../../assets/images/glic.jpg" alt="Photo of a Gliclazide package">
+          <p><strong>Gliclazide</strong> is a medicine used to treat type 2 diabetes.</p>
+          <p><strong>Gliclazide</strong> lowers your blood sugar by increasing the amount of insulin your body produces.</p>
+          <p> Tablets should be taken twice daily and according to the main meals of the day.</p>
+          <p><strong>Gliclazide</strong> can sometimes make your blood sugar level too low (hypoglycaemia). Carry some sweets or fruit juice with you to help when this happens.</p>
+          <p>The most common side effects are abdominal pain; diarrhoea; hypoglycaemia; nausea.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="grid-item">
+      <mat-card class="section-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Simvastatin</mat-card-title>
+          <mat-card-subtitle>Statin Medication</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="../../../assets/images/simavastin.jpg" alt="Photo of a Simavastin package">
+          <p><strong>Simvastatin</strong> belongs to a group of medicines called statins.</p>
+          <p>It's used to lower cholesterol if you've been diagnosed with high blood cholesterol. It's also taken to prevent heart disease, including heart attacks and strokes.</p>
+          <p> Used in conjunction with people taking medication for diabetes like <strong>Metformin</strong>.</p>
+          <p> It's unusual to have any side effects but <u><strong>don't</strong></u> take it with Grapefruit juice.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</div>

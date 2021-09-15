@@ -1,0 +1,46 @@
+<div class="main-area">
+
+  <div class ="title-area">
+    <p>Number of BodyMass Readings: {{ numOfWeights}}</p>
+    <div class="two-types">
+      <p> Click on the BodyMass <span class="id-color"><u>Id</u></span> to investigate the weight value deeper.
+    </div>
+  </div>
+  <table class="table-size">
+    <thead>
+    <tr>
+      <!--calls the sort function on a click on the table header-->
+      <th>Id</th>
+      <th>Weight (stones)</th>
+      <th>Height (feet/inches)</th>
+      <th>Waist (inches)</th>
+      <th>Date</th>
+      <th>TimeOfDay </th>
+      <th>BMI </th>
+      <th>Notes</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let item of weightsList | paginate: config">
+      {{ calculateNumOfWeights(weightsList.length) }}
+      <td
+      ><a class="id-choosen" [routerLink] = "['/singleWeight', item.id]">
+        {{ item.id}}
+      </a>
+      </td>
+      <td> {{item.weight}}</td>
+      <td>{{item.height}}</td>
+      <td>{{item.waist}}</td>
+      <td>{{item.date | date }}</td>
+      <td>{{item.timeOfDay}}</td>
+      <td>{{item.bmi}}</td>
+      <td>{{item.notes}}</td>
+    </tr>
+    <tr *ngIf="!weightsList || !weightsList.length">
+      <td colspan="4">No Results found</td>
+    </tr>
+  </table>
+  <pagination-controls class="pagin" (pageChange)="pageChanged($event)"></pagination-controls>
+
+</div>
+
+

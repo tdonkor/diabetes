@@ -1,0 +1,226 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/burger.png");
+  /* linear gradient makes image darker but use transparency */
+  background-size: cover;
+  /* gets the whole image */
+  background-position: center;
+  height: 100vh;
+  /* 100% of the view port  for the image */
+  background-attachment: fixed;
+  /* image stays in the same place */
+  /* main navigation on main page */
+}
+header button {
+  height: 60px;
+  width: 250px;
+  font-size: large;
+  text-decoration: none;
+  border-radius: 200px;
+  /* make the button round  */
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+}
+header button:hover,
+header button:active {
+  background-color: #cf6d17;
+}
+header nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+header nav li {
+  padding-right: 20px;
+  float: right;
+  display: inline-block;
+  /* so they can be side by side */
+  margin-left: 10px;
+  font-size: 20px;
+}
+header nav li a:link,
+header nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  /*  specifies the decoration added to text */
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+header nav li a:hover,
+header nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+header .text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  /*  applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
+}
+header .text-box p {
+  font-size: x-large;
+}
+header .text-box h1 {
+  font-size: xxx-large;
+}
+header a {
+  color: tomato;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+section {
+  margin: 0;
+}
+
+.section {
+  margin: 0;
+}
+
+.section h1 {
+  height: 50px;
+  background-color: #370093;
+  color: #fff;
+  padding: 12px;
+  margin: 0;
+}
+
+.section-diabetes-basics {
+  padding: 20px;
+  margin: 0;
+  color: darkblue;
+  background-color: aliceblue;
+}
+.section-diabetes-basics p {
+  font-size: large;
+}
+.section-diabetes-basics .types {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  padding-left: 10%;
+}
+.section-diabetes-basics .types .type-column {
+  flex: 1;
+}
+.section-diabetes-basics .types .flexbox .type-column:nth-child(1) {
+  background: #ccc;
+  order: 1;
+}
+.section-diabetes-basics .types .flexbox .type-column:nth-child(2) {
+  background: #eee;
+  order: 0;
+}
+.section-diabetes-basics .types .flexbox .type-column:nth-child(3) {
+  background: #eee;
+  order: 2;
+}
+.section-diabetes-basics ul li {
+  color: darkblue;
+  font-size: large;
+  text-transform: none;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.section-diabetes-levels {
+  padding: 10px;
+  color: darkblue;
+  background-color: aliceblue;
+}
+.section-diabetes-levels p {
+  color: darkblue;
+  font-size: x-large;
+}
+.section-diabetes-levels .hb-details {
+  font-size: x-large;
+}
+.section-diabetes-levels .hb-details p {
+  font-size: x-large;
+}
+.section-diabetes-levels .levels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 100px;
+  height: 75%;
+  padding-left: 10%;
+}
+
+.section-diabetes-links {
+  padding-left: 10px;
+  background-color: aliceblue;
+}
+.section-diabetes-links p {
+  padding: 20px;
+  color: darkblue;
+  font-size: x-large;
+}
+.section-diabetes-links ul li {
+  color: darkblue;
+  font-size: xx-large;
+  text-transform: lowercase;
+  padding-left: 20px;
+}
+.section-diabetes-links li a:hover {
+  text-decoration: none;
+  /*  specifies the decoration added to text */
+  text-transform: uppercase;
+  color: #e67e22;
+  margin: 20px 0 20px 0;
+}
+
+.section-living-with-diabetes {
+  margin: 0;
+  color: darkblue;
+  background-color: aliceblue;
+}
+.section-living-with-diabetes p {
+  color: darkblue;
+  font-size: large;
+}
+.section-living-with-diabetes img {
+  height: 100px;
+  width: 100px;
+}
+.section-living-with-diabetes .types {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  padding-left: 10%;
+}
+.section-living-with-diabetes .types .type-column {
+  flex: 1;
+}
+.section-living-with-diabetes .types ul li {
+  color: darkblue;
+  font-size: large;
+  text-transform: none;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.section-living-with-diabetes .types .flexbox .type-column:nth-child(1) {
+  background: #ccc;
+  order: 1;
+}
+.section-living-with-diabetes .types .flexbox .type-column:nth-child(2) {
+  background: #eee;
+  order: 0;
+}
+.section-living-with-diabetes .types .flexbox .type-column:nth-child(3) {
+  background: #eee;
+  order: 2;
+}
+
+h2, h3 {
+  color: darkred;
+}
+
+/*# sourceMappingURL=information.component.css.map */

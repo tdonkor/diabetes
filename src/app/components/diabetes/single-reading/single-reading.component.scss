@@ -1,0 +1,90 @@
+.main-area {
+  box-sizing: border-box;
+  padding:20px;
+  height: 100%;
+  background-color: aliceblue;
+
+
+  .table, th, td {
+    border: 1px solid black;
+  }
+  .table {
+    width: 80%;
+    -moz-box-shadow: 10px 10px 10px 10px #777777;
+    -webkit-box-shadow: 10px 10px 10px 10px #777777;
+    box-shadow: 10px 10px 10px 10px #777777;
+    margin: 50px;
+
+    th, td {
+      padding: 7px 10px 10px 10px;
+    }
+
+    th {
+      text-align: left;
+      font-size: large;
+      font-weight: bolder;
+      background-color: #2e5cb8;
+      color: snow;
+    }
+    td {
+      font-weight: bold;
+      font-size: x-large;
+    }
+    button {
+
+        color:white;
+        width: 100px;
+        height: 40px;
+        font-size: x-large;
+        background-color: red;
+    }
+
+  }
+
+  .info{
+    border: 1px solid black;
+    padding:20px;
+    margin: 50px;
+    font-size: large;
+    width: 80%;
+    box-shadow: 10px 10px 10px 10px #777777;
+    background-color: lightcyan;
+  }
+
+  .info li {
+    font-weight: bold;
+  }
+
+  .return{
+    margin: 50px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+
+
+.hype {
+  color:white;
+}
+
+.hypo{
+  font-size: x-large;
+  font-weight: bold;
+  color: green;
+}
+.hyper{
+  font-size: x-large;
+  font-weight: bold;
+  color:red
+}
+
+.serious {
+  font-size: x-large;
+  font-weight: bold;
+  color: darkred;
+}
+.normal{
+  font-size: x-large;
+  font-weight: bold;
+  color:blue
+}

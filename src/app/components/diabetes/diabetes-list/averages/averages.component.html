@@ -1,0 +1,70 @@
+<div class="main-area">
+
+  <div class ="title-area">
+    <p>Sugar Reading Data</p>
+
+  </div>
+<table class="table-size">
+  <thead>
+  <tr>
+    <!--calls the sort function on a click on the table header-->
+    <th></th>
+    <th>Morning </th>
+    <th>Afternoon </th>
+    <th>Evening </th>
+    <th>Overall </th>
+  </tr>
+  </thead>
+  <tr>
+    <th scope="row">Number of Sugar Readings Taken</th>
+    <td>{{numMorningReadings}}</td>
+    <td>{{numAfternoonReadings}}</td>
+    <td>{{numEveningReadings}}</td>
+    <td>{{numReadings}}</td>
+  </tr>
+  <tr>
+    <th scope="row">Sugar Reading Average Values (mmol/l)</th>
+    <td>{{morningAvg | number : '1.2-2'}}</td>
+    <td>{{afternoonAvg | number : '1.2-2'}}</td>
+    <td>{{eveningAvg | number : '1.2-2'}}</td>
+    <td>{{readingAvg | number : '1.2-2'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">Number of Hypoglycemic Readings(Below 4.0 mmol/l)</th>
+    <td>{{morningHypo}}</td>
+    <td>{{afternoonHypo}}</td>
+    <td>{{eveningHypo}}</td>
+    <td>{{numOfHypo}}</td>
+  </tr>
+  <tr>
+    <th scope="row">Number of Hyperglycemic Readings(Above 7.0 mmol/l)</th>
+    <td>{{morningHyper}}</td>
+    <td>{{afternoonHyper}}</td>
+    <td>{{eveningHyper}}</td>
+    <td>{{numOfHyper}}</td>
+  </tr>
+  <tr>
+    <th scope="row">Lowest Readings</th>
+    <td>{{morningLow}}</td>
+    <td>{{afternoonLow}}</td>
+    <td>{{eveningLow}}</td>
+    <td>{{overallLow}}</td>
+  </tr>
+  <tr>
+    <th scope="row">Highest Readings</th>
+    <td>{{morningHigh}}</td>
+    <td>{{afternoonHigh}}</td>
+    <td>{{eveningHigh}}</td>
+    <td>{{overallHigh}}</td>
+  </tr>
+  <tfoot>
+  <tr>
+    <td colspan="5"> </td>
+  </tr>
+  </tfoot>
+
+</table>
+  <div class="return">
+    <a routerLink="/sugarReadings" routerLinkActive="active">Back to Sugar List Readings</a>
+  </div>
+</div>

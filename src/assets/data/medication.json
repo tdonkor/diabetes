@@ -1,0 +1,26 @@
+[
+  {
+    "medication": "Metformin",
+    "dose": "500 mg of Metformin Hydrochloride per tablet.",
+    "intake": "2 tablets twice daily, Morning and Evening  after food." ,
+    "notes": "Main diabetes medication."
+  },
+  {
+    "medication": "Jardiance",
+    "dose": "10 mg per tablet.",
+    "intake": "Once in the morning after breakfast." ,
+    "notes": "Been taking since first of June to lower HbA1c levels will review after 3 months use."
+  },
+  {
+    "medication": "Simavastin",
+    "dose": "20 mg per tablet.",
+    "intake": "Once in the evening before bed." ,
+    "notes": "Taken to lower cholesterol."
+  },
+  {
+    "medication": "Gliclazide",
+    "dose": "40-80mg increased if necessary to 160mg.",
+    "intake": "Once with main meals morning and evening." ,
+    "notes": "Only taken for 3 months at diagnosis of Diabetes a few years ago , now not taken anymore."
+  }
+]

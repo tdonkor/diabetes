@@ -1,0 +1,41 @@
+
+mat-toolbar {
+  //background: #521751;
+  background-color: #2e5cb8;
+
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 7px #111111;
+  display: flex;
+  flex-direction: row;
+  align-items:center; // centre vertically with height below
+  height: 100%;
+
+}
+
+.navigation-item {
+  margin: 0 10px;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: white
+}
+
+.navigation-item a:hover,
+.navigation-item a:active {
+  text-decoration: none;
+  color: #fa923f;
+}
+
+
+.header-title {
+  font-size: xx-large;
+  text-shadow: 2px 2px 7px #111111;
+  margin: auto; //horizontally centre the element within its container
+  color: white;
+}

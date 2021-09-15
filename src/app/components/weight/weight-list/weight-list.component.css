@@ -1,0 +1,79 @@
+.main-area {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  background-color: aliceblue;
+}
+.main-area .title-area {
+  width: 90%;
+  background-color: lightsteelblue;
+  margin: 5px auto;
+  padding: 2px 0 2px 0;
+}
+.main-area .title-area p {
+  padding-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  color: darkblue;
+}
+.main-area .title-area .two-types p {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: large;
+  color: black;
+}
+.main-area .table-size {
+  width: 90%;
+  margin: 10px auto;
+  -moz-box-shadow: 10px 10px 10px 10px #777777;
+  -webkit-box-shadow: 10px 10px 10px 10px #777777;
+  box-shadow: 10px 10px 10px 10px #777777;
+}
+.main-area .table-size th, .main-area .table-size td {
+  padding: 7px 10px 10px 10px;
+}
+.main-area .table-size th {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #2e5cb8;
+  color: azure;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 2;
+}
+.main-area .table-size td {
+  font-weight: bold;
+  font-size: x-large;
+}
+.main-area .table-size td .id-choosen {
+  color: red;
+}
+.main-area .table-size tr:nth-child(odd) {
+  background-color: lightsteelblue;
+}
+.main-area .table-size .sugar-average {
+  font-size: x-large;
+  background-color: #2e5cb8;
+  color: white;
+}
+.main-area .table-size .date-time {
+  position: relative;
+  left: 70%;
+}
+
+.hype {
+  color: white;
+}
+
+.id-color {
+  color: darkred;
+}
+
+.pagin {
+  font-weight: bold;
+  font-size: large;
+}
+
+/*# sourceMappingURL=weight-list.component.css.map */

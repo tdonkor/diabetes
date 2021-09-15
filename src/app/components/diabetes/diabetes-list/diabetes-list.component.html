@@ -1,0 +1,111 @@
+<div class="main-area">
+  <div class ="title-area">
+    <p>Number of Sugar Readings: <span class="id-color">{{ numOfSugarReadings}}</span></p>
+    <div class="two-types">
+      <p> Click on the reading <span class="id-color"><u>Id</u></span> to investigate the reading deeper.</p>
+      <p> Click on this link: <a [routerLink] = "['/readingAverages']">DATA</a> to see more in-depth data of the recorded sugar readings.</p>
+    </div>
+  </div>
+  <div>
+    <table class="table-size">
+      <thead>
+      <tr>
+        <!--calls the sort function on a click on the table header-->
+        <th>Id</th>
+        <th>Sugar Reading</th>
+        <th>Date of Reading</th>
+        <th>Time of Day</th>
+        <th>Medication</th>
+        <th>Notes</th>
+
+      </tr>
+      </thead>
+<!--       calculate the averages-->
+      {{ calculateAverage(diabetesList) }}
+      {{ calculateMorningAverage() }}
+      {{ calculateAfternoonAverage() }}
+      {{ calculateEveningAverage() }}
+
+
+      <tr *ngFor="let item of diabetesList | paginate: config">
+        {{ calculateNumOfReadings(diabetesList.length) }}
+
+        <td
+        ><a class="id-choosen" [routerLink] = "['/singleId', item.id]">
+          {{ item.id}}
+        </a>
+        </td>
+        <td [ngStyle] = "{backgroundColor: getColor(item.reading)}"
+            [ngClass] = "{hype: item.reading > 7.0 || item.reading < 4.0 }">
+          {{item.reading}}</td>
+        <td>{{item.date | date }}</td>
+        <td>{{item.timeOfDay}}</td>
+        <td>{{item.medication}}</td>
+        <td>{{item.notes}}</td>
+      </tr>
+      <tr *ngIf="!diabetesList || !diabetesList.length">
+        <td colspan="3">No Results found</td>
+      </tr>
+      <tfoot>
+      <tr>
+        <td colspan="6"> </td>
+      </tr>
+      </tfoot>
+    </table>
+    <pagination-controls class="pagin" (pageChange)="pageChanged($event)"></pagination-controls>
+
+  </div>
+
+
+</div>
+
+
+
+
+<!--<div class="background">-->
+<!--&lt;!&ndash;- Note that these columns can be defined in any order.-->
+<!--        The actual rendered columns are set as a property on the row definition" &ndash;&gt;-->
+
+<!--<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">-->
+
+<!--&lt;!&ndash; Id Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="Id">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Id </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.Id}} </td>-->
+<!--</ng-container>-->
+
+<!--&lt;!&ndash; Reading Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="Reading">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Sugar Reading </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.Reading}} </td>-->
+<!--</ng-container>-->
+
+<!--&lt;!&ndash; Date Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="Date">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Date of Reading </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.Date}} </td>-->
+<!--</ng-container>-->
+
+<!--&lt;!&ndash; TimeOfDay Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="TimeOfDay">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Time of Day </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.TimeOfDay}} </td>-->
+<!--</ng-container>-->
+
+<!--&lt;!&ndash; Medication Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="Medication">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Medication </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.Medication}} </td>-->
+<!--</ng-container>-->
+
+<!--&lt;!&ndash; Notes Column &ndash;&gt;-->
+<!--<ng-container matColumnDef="Notes">-->
+<!--  <th mat-header-cell *matHeaderCellDef> Notes </th>-->
+<!--  <td mat-cell *matCellDef="let element"> {{element.Notes}} </td>-->
+<!--</ng-container>-->
+
+<!--<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>-->
+<!--<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>-->
+<!--</table>-->
+
+<!--</div>-->

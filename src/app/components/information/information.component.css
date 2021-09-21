@@ -223,4 +223,11 @@ h2, h3 {
   color: darkred;
 }
 
+.top {
+  margin: 10px 0px 10px 20px;
+  font-size: large;
+  background-color: aliceblue;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=information.component.css.map */

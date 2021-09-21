@@ -1,0 +1,18 @@
+
+<div class="page">
+  <div class="pie">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+    </canvas>
+  </div>
+  <div class="return">
+    <a routerLink="/readingAverages" routerLinkActive="active">Back to Sugar List Data</a>
+  </div>
+</div>
+
+

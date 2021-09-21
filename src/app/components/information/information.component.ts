@@ -13,6 +13,7 @@ export class InformationComponent implements OnInit {
   id2 = 'levels';
   id3 = 'living-with-diabetes';
   id4 = 'diabetes-links';
+  id5 = 'top';
 
   constructor(private router: Router) { }
 
@@ -22,4 +23,5 @@ export class InformationComponent implements OnInit {
   diabeticHealth() {
     this.router.navigate(['/diabeticHealth'],  { queryParams:  filter, skipLocationChange: true});
   }
+
 }

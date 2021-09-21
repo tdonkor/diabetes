@@ -6,6 +6,39 @@
   padding: 20px;
   height: 100%;
   background-color: aliceblue;
+
+  .inner {
+    padding: 30px;
+    margin:0;
+    border-style: hidden;
+    color: darkblue;
+    box-shadow: 5px 5px 5px 5px #777777;
+
+    img {
+      margin:20px;
+      height: 200px;
+      width: 250px;
+      border: solid 1px aliceblue;
+      box-shadow: 5px 5px 5px 5px #777777;
+    }
+
+    p {
+      font-size: x-large;
+    }
+
+    .list {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    a{
+      font-size: x-large;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #e67e22;
+    }
+  }
 }
 
 p {

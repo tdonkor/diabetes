@@ -1,0 +1,22 @@
+.page {
+  background-color: lightsteelblue;
+  height: 100%;
+  width: 100%;
+}
+.page .pie {
+  height: 80%;
+  width: 80%;
+  display: block;
+}
+.page .return {
+  margin: 20px 0 10px 100px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+pieChartLabels {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=sugar-chart.component.css.map */

@@ -23,6 +23,8 @@ import {FoodgroupsComponent} from './components/health/diet/foodgroups/foodgroup
 import {EatingComponent} from './components/health/diet/eating/eating.component';
 import {GlycemicIndexComponent} from './components/health/diet/glycemic-index/glycemic-index.component';
 import {GlycaemicTablesComponent} from './components/health/diet/glycemic-index/glycaemic-tables/glycaemic-tables.component';
+import {SugarChartComponent} from './components/diabetes/diabetes-list/averages/sugar-chart/sugar-chart.component';
+
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -55,6 +57,7 @@ const routes: Routes = [
   {path: 'eating', component: EatingComponent,  data: {title: 'What Should I Eat? '} },
   {path: 'glycemic', component: GlycemicIndexComponent,  data: {title: 'Glycaemic Index of Foods'} },
   {path: 'glyceamicTables', component: GlycaemicTablesComponent,  data: {title: 'Glycaemic Tables' }},
+  {path: 'sugarChart', component: SugarChartComponent,  data: {title: 'Sugar Totals Chart' }},
   {path: '**', component: PageNotFoundComponent, data: {title: 'Error Page'} },
 ];
 

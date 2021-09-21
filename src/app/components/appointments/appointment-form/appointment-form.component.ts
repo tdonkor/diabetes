@@ -39,6 +39,13 @@ export class AppointmentFormComponent implements OnInit {
     this.appointmentsForm.reset();
     this.router.navigate(['/addAppointment'],  { queryParams:  filter, skipLocationChange: true});
 
+    // go back to the Appointments readings page
+    setTimeout(() => {
+        alert('Returning to Appointments list');
+        this.router.navigate(['/appointments']);
+      },
+      3000);
+
   }
 
 }

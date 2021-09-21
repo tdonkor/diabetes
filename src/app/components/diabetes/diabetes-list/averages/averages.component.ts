@@ -41,6 +41,12 @@ export class AveragesComponent implements OnInit {
   overallHigh: number;
   overallLow: number;
 
+  lessThan4: number;
+  between45: number;
+  between56: number;
+  between67: number;
+  greaterThan7: number;
+
   dateTime = new Date();
 
   constructor(private diabetesService: DiabetesService) {
@@ -83,6 +89,13 @@ export class AveragesComponent implements OnInit {
 
     this.overallHigh = this.diabetesService.overallHigh;
     this.overallLow = this.diabetesService.overallLow;
+
+    // stats
+    this.lessThan4 = this.diabetesService.lessThan4;
+    this.between45 = this.diabetesService.between45;
+    this.between56 = this.diabetesService.between56;
+    this.between67  = this.diabetesService.between67;
+    this.greaterThan7  = this.diabetesService.greaterThan7;
 
   }
 }

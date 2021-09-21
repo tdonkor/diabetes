@@ -19,7 +19,13 @@
 }
 
 .return {
-  margin: 50px;
+  margin: 20px 0 10px 100px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.chart {
+  margin: 30px 0 10px 100px;
   font-size: x-large;
   font-weight: bold;
 }
@@ -52,11 +58,14 @@
 .table-size td .id-choosen {
   color: red;
 }
-.table-size tr:nth-child(odd) {
+.table-size tr:nth-child(even) {
   background-color: lightsteelblue;
 }
 .table-size tfoot tr {
   background-color: #2e5cb8;
+}
+.table-size .stats {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=averages.component.css.map */

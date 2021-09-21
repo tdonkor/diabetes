@@ -21,9 +21,9 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/sugarReadings'],  { queryParams:  filter, skipLocationChange: true});
   }
 
-  addSugarReading() {
-    this.router.navigate(['/addSugarReading'],  { queryParams:  filter, skipLocationChange: true});
-  }
+  // addSugarReading() {
+  //   this.router.navigate(['/addSugarReading'],  { queryParams:  filter, skipLocationChange: true});
+  // }
 
   displaySugarReadingsAverages() {
     this.router.navigate(['/readingAverages'],  { queryParams:  filter, skipLocationChange: true});
@@ -33,9 +33,9 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/appointments'],  { queryParams:  filter, skipLocationChange: true});
   }
 
-  addAppointment() {
-    this.router.navigate(['/addAppointment'],  { queryParams:  filter, skipLocationChange: true});
-  }
+  // addAppointment() {
+  //   this.router.navigate(['/addAppointment'],  { queryParams:  filter, skipLocationChange: true});
+  // }
   medication() {
     this.router.navigate(['/medication'],  { queryParams:  filter, skipLocationChange: true});
   }

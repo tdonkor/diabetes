@@ -1,9 +1,14 @@
 <div class="main-area">
   <div class ="title-area">
-    <p>Number of Sugar Readings: <span class="id-color">{{ numOfSugarReadings}}</span></p>
+    <p>Number of Sugar Readings: <span class="id-color">{{ numOfSugarReadings}}</span>
+      <button mat-raised-button
+              matTooltip="Add new Sugar Reading"
+              (click)="addNewReading()" >Add New Sugar Reading
+      </button>
+    </p>
     <div class="two-types">
       <p> Click on the reading <span class="id-color"><u>Id</u></span> to investigate the reading deeper.</p>
-      <p> Click on this link: <a [routerLink] = "['/readingAverages']">DATA</a> to see more in-depth data of the recorded sugar readings.</p>
+      <p> Click on this link:<span class="link"><a [routerLink] = "['/readingAverages']">Sugar Data</a></span> to see more in-depth data of the recorded sugar readings.</p>
     </div>
   </div>
   <div>
@@ -20,11 +25,12 @@
 
       </tr>
       </thead>
-<!--       calculate the averages-->
+<!--       calculate the averages and statistics-->
       {{ calculateAverage(diabetesList) }}
       {{ calculateMorningAverage() }}
       {{ calculateAfternoonAverage() }}
       {{ calculateEveningAverage() }}
+      {{ calculateSections() }}
 
 
       <tr *ngFor="let item of diabetesList | paginate: config">

@@ -8,6 +8,10 @@
   height: 100%;
   background-color: aliceblue;
 }
+.link {
+  background-color: white;
+  border: 1px solid black;
+}
 
 // title area
   .title-area{
@@ -15,7 +19,7 @@
     background-color: lightsteelblue;
     margin: 5px auto;
     padding: 2px 0 2px 0;
-
+    border: 3px solid #2e5cb8;
 
     .date-time {
       position: relative;
@@ -37,6 +41,13 @@
       color:black;
 
     }
+
+    .two-types:hover p,
+    .two-types:active p
+     {
+      background-color: #cf6d17;
+      color:white;
+     }
   }
 
   // table area
@@ -85,6 +96,24 @@
       }
 
   }
+button {
+  height: 40px;
+  width: 230px;
+  font-size: large;
+  text-decoration: none;
+  border-radius: 200px; /* make the button round  */
+  //transition: background-color 0.2s, border 0.2s, color 0.2s;
+  border: 3px solid white;
+  background-color: #2e5cb8;
+  color: white;
+  margin-left: 50px;
+
+}
+
+button:hover,
+button:active {
+  background-color: #cf6d17;
+}
 
   // used in the [ngClass]
 .hype {

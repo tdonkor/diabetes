@@ -23,11 +23,15 @@
   }
 }
 .return{
-  margin: 50px;
+  margin: 20px 0 10px 100px;
   font-size: x-large;
   font-weight: bold;
 }
-
+.chart{
+  margin: 30px 0 10px 100px;
+  font-size: x-large;
+  font-weight: bold;
+}
 // table area
 .table-size {
   width: 90%;
@@ -59,7 +63,7 @@
       color: red;
     }
   }
-  tr:nth-child(odd) {
+  tr:nth-child(even) {
     background-color: lightsteelblue;
   }
 
@@ -69,5 +73,8 @@
   }
 
 
+.stats {
+  margin-top: 10px;
+}
 
 }

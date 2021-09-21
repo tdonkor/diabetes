@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {IAppointments, } from '../../../shared/interfaces';
 import {AppointmentsService} from '../../../services/appointments.service';
 import {MatTableDataSource} from '@angular/material';
+import {filter} from 'rxjs/operators';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-appointment-list',
@@ -23,7 +25,7 @@ export class AppointmentListComponent implements OnInit {
 
   config: any;
 
-  constructor(private appointmentsService: AppointmentsService) {
+  constructor(private appointmentsService: AppointmentsService, private router: Router) {
 
 
     this.config = {
@@ -55,5 +57,9 @@ export class AppointmentListComponent implements OnInit {
 
   pageChanged(event) {
     this.config.currentPage = event;
+  }
+
+  addNewAppointment(){
+    this.router.navigate(['/addAppointment'],  { queryParams:  filter, skipLocationChange: true});
   }
 }

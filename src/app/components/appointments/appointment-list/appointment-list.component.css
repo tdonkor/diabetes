@@ -22,6 +22,11 @@
   font-size: large;
   color: black;
 }
+.main-area .title-area .two-types:hover p,
+.main-area .title-area .two-types:active p {
+  background-color: #cf6d17;
+  color: white;
+}
 .main-area .table-size {
   width: 90%;
   margin: 10px auto;
@@ -61,6 +66,24 @@
 .main-area .table-size .date-time {
   position: relative;
   left: 70%;
+}
+
+button {
+  height: 40px;
+  width: 220px;
+  font-size: large;
+  text-decoration: none;
+  border-radius: 200px;
+  /* make the button round  */
+  border: 3px solid white;
+  background-color: #2e5cb8;
+  color: white;
+  margin-left: 50px;
+}
+
+button:hover,
+button:active {
+  background-color: #cf6d17;
 }
 
 .hype {

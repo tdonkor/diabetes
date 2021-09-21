@@ -44,9 +44,9 @@ export class SugarReadingFormComponent implements OnInit {
     this.router.navigate(['/addSugarReading'],  { queryParams:  filter, skipLocationChange: true});
 
     // go back to the sugar readings page
-
     setTimeout(() => {
-        this.router.navigate(['/sugarReadings']);
+      alert('Returning to Sugar Readings list');
+      this.router.navigate(['/sugarReadings']);
       },
       3000);
 

@@ -60,6 +60,13 @@ export class WeightFormComponent implements OnInit {
     this.weightReadingForm.reset();
     this.router.navigate(['/addWeightReading'],  { queryParams:  filter, skipLocationChange: true});
 
+    // go back to the Weight readings page
+    setTimeout(() => {
+        alert('Returning to BMI list');
+        this.router.navigate(['/weightList']);
+      },
+      3000);
+
   }
 
 }

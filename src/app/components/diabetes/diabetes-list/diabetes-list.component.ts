@@ -3,6 +3,8 @@ import {IDiabetes} from '../../../shared/interfaces';
 import {MatTableDataSource} from '@angular/material';
 import {DiabetesService} from '../../../services/diabetes.service';
 import {AveragesComponent} from './averages/averages.component';
+import {filter} from 'rxjs/operators';
+import {Router} from '@angular/router';
 
 
 // noinspection DuplicatedCode
@@ -67,10 +69,16 @@ export class DiabetesListComponent implements OnInit {
   overallHigh: number;
   overallLow: number;
 
+  lessThan4: number;
+  between45: number;
+  between56: number;
+  between67: number;
+  greaterThan7: number;
+
 
   config: any;
 
-  constructor(private diabetesService: DiabetesService) {
+  constructor(private diabetesService: DiabetesService,  private router: Router) {
     this.config = {
       itemsPerPage: 10,
       currentPage: 1,
@@ -109,12 +117,11 @@ export class DiabetesListComponent implements OnInit {
 
         if(this.diabetesList[i].reading < 4.0){
           this.morningHypo++;
-
         }
         if(this.diabetesList[i].reading > 7.0){
           this.morningHyper++;
-
         }
+
         //get lowest
         if( this.diabetesList[i].reading < this.morningLow){
           this.morningLow = this.diabetesList[i].reading;
@@ -227,6 +234,41 @@ export class DiabetesListComponent implements OnInit {
 
   }
 
+  //
+  calculateSections() {
+    this.lessThan4 = 0;
+    this.between45 = 0;
+    this.between56 = 0;
+    this.between67 = 0;
+    this.greaterThan7 = 0;
+    for (let i = 0; i < this.diabetesList.length; i++) {
+
+          if(this.diabetesList[i].reading < 4.0){
+            this.lessThan4++;
+          }
+          if((this.diabetesList[i].reading >= 4.0) && (this.diabetesList[i].reading <= 5.0) ){
+            this.between45++;
+          }
+          if((this.diabetesList[i].reading > 5.0) && (this.diabetesList[i].reading <= 6.0) ){
+            this.between56++;
+          }
+          if((this.diabetesList[i].reading > 6.0) && (this.diabetesList[i].reading <= 7.0) ){
+            this.between67++;
+          }
+          if(this.diabetesList[i].reading > 7.0){
+            this.greaterThan7++;
+          }
+       }
+
+    // populate the service
+    this.diabetesService.lessThan4 = this.lessThan4;
+    this.diabetesService.between45 = this.between45;
+    this.diabetesService.between56 = this.between56;
+    this.diabetesService.between67 = this.between67;
+    this.diabetesService.greaterThan7 = this.greaterThan7;
+   }
+
+
   // Total
   calculateNumOfReadings(num: number) {
     this.numOfSugarReadings = num;
@@ -241,6 +283,8 @@ export class DiabetesListComponent implements OnInit {
    // loop through  pen  and add to the total.
     diabetesArr.forEach((dia: IDiabetes) => {
       this.readingTotal += dia.reading;
+
+
       //get lowest
       if( dia.reading < this.overallLow){
         this.overallLow = dia.reading;
@@ -273,5 +317,9 @@ export class DiabetesListComponent implements OnInit {
 
   pageChanged(event) {
     this.config.currentPage = event;
+  }
+
+  addNewReading() {
+    this.router.navigate(['/addSugarReading'],  { queryParams:  filter, skipLocationChange: true});
   }
 }

@@ -48,6 +48,12 @@ export class DiabetesService {
   overallHigh: number;
   overallLow: number;
 
+  lessThan4: number;
+  between45: number;
+  between56: number;
+  between67: number;
+  greaterThan7: number;
+
 
   constructor(private http: HttpClient) { }
 

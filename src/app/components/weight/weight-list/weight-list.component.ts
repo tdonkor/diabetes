@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { IBodyMass} from '../../../shared/interfaces';
 import {MatTableDataSource} from '@angular/material';
 import {WeightsService} from '../../../services/weights.service';
+import {filter} from 'rxjs/operators';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-weight-list',
@@ -18,7 +20,7 @@ export class WeightListComponent implements OnInit {
 
   config: any;
 
-  constructor(private weightsService: WeightsService) {
+  constructor(private weightsService: WeightsService,   private router: Router) {
 
 
     this.config = {
@@ -45,6 +47,8 @@ export class WeightListComponent implements OnInit {
     this.weightsService.setIdNumber(this.numOfWeights);
   }
 
+
+
   getColor(reading: number) {
     if (reading > 7.0 ) { return 'red'; }
     if (reading < 4.0 ) { return 'green'; }
@@ -52,6 +56,10 @@ export class WeightListComponent implements OnInit {
 
   pageChanged(event) {
     this.config.currentPage = event;
+  }
+
+  addNewBmiReading() {
+    this.router.navigate(['/addWeightReading'],  { queryParams:  filter, skipLocationChange: true});
   }
 
 }
